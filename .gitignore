@@ -1,0 +1,16 @@
+# OS clutter
+.DS_Store
+Thumbs.db
+
+# Python environments (never commit these — rebuild with pip install)
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw data too large for GitHub (see each project's README for how to get it)
+nyc-airbnb-affordability/2026-04-14_listings.csv

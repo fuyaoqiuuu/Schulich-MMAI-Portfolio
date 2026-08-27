@@ -1,0 +1,41 @@
+Sisid,Mentee_id,EMail,Fstname,Surname,Visa,ImmigrationStatus,Country,Citz_cty,Perm Country,Immigration Status,Language Of Correspondence,Mother Tongue,Years Attended
+2000000,1,student1@schulich-example.ca,Hana,Jackson,N/A,Permanent Resident,Canada,Pakistan,Brazil,International Student,English,Hindi,1
+2000001,2,student2@schulich-example.ca,Elif,Daniel,Study Permit,International Student,Kenya,China,Nigeria,International Student,English,Hindi,1
+2000002,3,student3@schulich-example.ca,Dae,Martin,Study Permit,Permanent Resident,Nigeria,Canada,Kenya,Permanent Resident,English,English,2
+2000003,4,student4@schulich-example.ca,Diego,Gray,Study Permit,Permanent Resident,Kenya,Ukraine,Ghana,International Student,English,Mandarin,1
+2000004,5,student5@schulich-example.ca,Bruno,Mayo,N/A,Permanent Resident,Ghana,Ghana,Pakistan,International Student,English,English,1
+2000005,6,student6@schulich-example.ca,Priya,Bowman,N/A,Permanent Resident,Brazil,Kenya,Vietnam,International Student,English,Vietnamese,2
+2000006,7,student7@schulich-example.ca,Minh,Hawkins,N/A,International Student,Philippines,Pakistan,Kenya,International Student,English,Yoruba,1
+2000007,8,student8@schulich-example.ca,Priya,Cohen,Study Permit,International Student,Kenya,Mexico,Ghana,Permanent Resident,English,Yoruba,1
+2000008,9,student9@schulich-example.ca,Camila,Cameron,N/A,International Student,Mexico,Indonesia,China,Permanent Resident,English,Spanish,2
+2000009,10,student10@schulich-example.ca,Kwame,Parsons,N/A,Permanent Resident,South Korea,Vietnam,Turkey,International Student,English,Mandarin,1
+2000010,11,student11@schulich-example.ca,Sofia,Perez,N/A,International Student,India,Ukraine,Canada,International Student,English,Mandarin,1
+2000011,12,student12@schulich-example.ca,Camila,Johnson,Study Permit,International Student,Nigeria,Kenya,Indonesia,International Student,English,Vietnamese,1
+2000012,13,student13@schulich-example.ca,Mei,Stewart,Study Permit,International Student,Ghana,Canada,Egypt,Permanent Resident,English,Hindi,2
+2000013,14,student14@schulich-example.ca,Yuki,Adams,N/A,Permanent Resident,South Korea,Turkey,Pakistan,Permanent Resident,English,Korean,1
+2000014,15,student15@schulich-example.ca,Wei,Clark,N/A,International Student,Nigeria,United States,Vietnam,Permanent Resident,English,Hindi,2
+2000015,16,student16@schulich-example.ca,Dae,Hahn,Study Permit,International Student,Colombia,Turkey,Mexico,Permanent Resident,English,Korean,2
+2000016,17,student17@schulich-example.ca,Arjun,Walter,Study Permit,Permanent Resident,Brazil,South Korea,Philippines,International Student,English,Mandarin,1
+2000017,18,student18@schulich-example.ca,Aisha,Edwards,N/A,International Student,Egypt,Vietnam,Philippines,Permanent Resident,English,Spanish,1
+2000018,19,student19@schulich-example.ca,Carlos,Rios,N/A,Permanent Resident,India,China,Egypt,International Student,English,English,2
+2000019,20,student20@schulich-example.ca,Fatima,Foster,N/A,Permanent Resident,United States,China,Brazil,International Student,English,English,1
+2000020,21,student21@schulich-example.ca,Kofi,Rocha,Study Permit,Permanent Resident,United States,South Korea,Ghana,International Student,English,Mandarin,2
+2000021,22,student22@schulich-example.ca,Santiago,Ellis,Study Permit,Permanent Resident,Vietnam,Kenya,Brazil,Permanent Resident,English,Korean,2
+2000022,23,student23@schulich-example.ca,Arjun,Baker,Study Permit,International Student,Mexico,Mexico,Ghana,International Student,English,Hindi,2
+2000023,24,student24@schulich-example.ca,Ivy,Wright,N/A,International Student,Philippines,Mexico,Brazil,Permanent Resident,English,Korean,1
+2000024,25,student25@schulich-example.ca,Camila,Hoffman,N/A,International Student,Vietnam,Pakistan,Colombia,Permanent Resident,English,Korean,1
+2000025,26,student26@schulich-example.ca,Yuki,Baker,Study Permit,International Student,Indonesia,Egypt,Philippines,International Student,English,Korean,2
+2000026,27,student27@schulich-example.ca,Santiago,Richards,N/A,Permanent Resident,China,Brazil,Philippines,International Student,English,Vietnamese,2
+2000027,28,student28@schulich-example.ca,Priya,Hurst,Study Permit,Permanent Resident,Colombia,Egypt,Ghana,International Student,English,Yoruba,1
+2000028,29,student29@schulich-example.ca,Aisha,Ross,Study Permit,Permanent Resident,China,Canada,United States,International Student,English,Spanish,2
+2000029,30,student30@schulich-example.ca,Carlos,Robinson,N/A,Permanent Resident,Brazil,Turkey,Canada,Permanent Resident,English,English,2
+2000030,31,student31@schulich-example.ca,Elif,Bright,N/A,Permanent Resident,United States,South Korea,Vietnam,Permanent Resident,English,English,2
+2000031,32,student32@schulich-example.ca,Bruno,Hicks,Study Permit,Permanent Resident,Indonesia,United States,China,Permanent Resident,English,Spanish,1
+2000032,33,student33@schulich-example.ca,Rafael,Davis,N/A,Permanent Resident,Pakistan,Pakistan,Vietnam,Permanent Resident,English,Korean,1
+2000033,34,student34@schulich-example.ca,Bruno,Williams,Study Permit,Permanent Resident,Canada,Egypt,Nigeria,International Student,English,English,2
+2000034,35,student35@schulich-example.ca,Yuki,Rodriguez,Study Permit,International Student,China,India,Kenya,Permanent Resident,English,Vietnamese,1
+2000035,36,student36@schulich-example.ca,Ngozi,Burton,N/A,International Student,Indonesia,Ukraine,Indonesia,International Student,English,Hindi,1
+2000036,37,student37@schulich-example.ca,Dae,Conner,Study Permit,Permanent Resident,Kenya,Mexico,Canada,Permanent Resident,English,Mandarin,1
+2000037,38,student38@schulich-example.ca,Zara,Henderson,Study Permit,Permanent Resident,South Korea,Pakistan,Canada,Permanent Resident,English,Korean,2
+2000038,39,student39@schulich-example.ca,Arjun,Brown,N/A,Permanent Resident,Mexico,Ukraine,Pakistan,Permanent Resident,English,Korean,1
+2000039,40,student40@schulich-example.ca,Hassan,James,N/A,Permanent Resident,Kenya,Philippines,Pakistan,International Student,English,English,2
