@@ -1,6 +1,11 @@
 # Predicting Credit Card Defaults — Fixing a Cross-Validation Leakage Bug + Feature Ablation
 
-Predicting next-month credit card default on the UCI/Taiwan credit card dataset with Logistic Regression, Ridge Regression, and a Decision Tree — built around catching and fixing a subtle scaling-leakage bug in cross-validation, then using a controlled ablation study to check which engineered features actually earn their place.
+Predicting next-month credit card default on the UCI/Taiwan credit card dataset with Logistic Regression, Ridge Regression, and a Decision Tree.
+
+## Project Impact & Business Relevance
+
+The delay-summary features that I engineered contain the model's strongest signal—and the direct key to actionable credit-risk decisions. In the ablation study, MAX_DELAY, AVG_DELAY, MONTHS_DELAYED, and EVER_DELAYED were the only feature group that consistently cut through the noise. This finding saves the engineering team substantial resources: fewer features to build, validate, and maintain in production, without sacrificing predictive accuracy for defaults.
+
 
 ## The Problem
 

@@ -1,10 +1,16 @@
 # International Student Mentor-Mentee Matching Algorithm
 
-A weighted-similarity matching system built for Schulich's International Student Services mentorship program, pairing incoming first-year international students with upper-year mentors on shared goals, background, and identity.
+A weighted-similarity matching system built for Schulich's International Student Services mentorship program, pairing incoming first-year international students with upper-year mentors on shared goals, background, and stated preferences.
+
+## Project Impact & Business Relevance
+**Save Time and Eliminate Manual Effort:** Replaces hours of manual spreadsheet sorting and intuition-driven guesswork with an automated script that matches the entire cohort in seconds.
+
+**Optimized Match Quality:** Algorithmic pairing maximizes mutual alignment across the entire pool, elevating the overall value and depth of every individual mentorship session.
+
 
 ## The Problem
 
-Every year, Schulich's International Student Services department runs a mentorship program that pairs incoming first-year international students with upper-year student mentors. Historically, this pairing was done manually — a time-consuming process with no consistent, defensible logic behind who got matched with whom, and no good way to weigh multiple factors (what a mentee actually needs help with, shared cultural background, gender preference) against each other at scale.
+Every year, Schulich's International Student Services department runs a mentorship program that pairs incoming first-year international students with upper-year student mentors. Historically, this pairing was done manually — a time-consuming process with no consistent, defensible logic behind who got matched with whom, and no good way to weigh multiple factors (what a mentee actually needs help with, shared cultural background, whether they'd prefer a domestic or international mentor) against each other at scale.
 
 With roughly 20-30 mentors and a comparable number of mentees each intake, the matching problem is small enough to solve by hand, but large enough that "by hand" means intuition-driven guesswork rather than a repeatable process. As the program grows, that doesn't scale — and more importantly, it doesn't reliably produce good matches.
 
@@ -14,7 +20,7 @@ The matching is framed as a **weighted bipartite similarity-scoring problem, sol
 
 1. **Semantic similarity on stated goals (40% weight).** Each mentee's stated objectives ("Adjusting to life in Canada," "Making friends," "Resume/interview prep," etc.) and each mentor's stated motivation for mentoring are encoded into dense vector embeddings using a pre-trained sentence-transformer model (`all-MiniLM-L6-v2`). Cosine similarity between every mentee-mentor pair produces a semantic "goals alignment" score.
 2. **Shared cultural background (30% weight).** A binary match score (1 if the mentee's and mentor's home country match, 0 otherwise), reflecting that shared cultural/national background is often a meaningful source of comfort and common ground for a student adjusting to a new country.
-3. **Gender alignment (30% weight).** Gender is inferred programmatically from first names (via the `gender-guesser` library) where not explicitly provided, then scored as a match (1.0), mismatch (0.0), or neutral (0.5) when inference is inconclusive — reflecting that some mentees may have a gender preference for their mentor and shouldn't be penalized when that data is missing.
+3. **Domestic/international preference alignment (30% weight).** Each mentee states a preference for a domestic mentor, an international mentor, someone from their home country, or no preference; this is scored against each mentor's own domestic/international status as a match (1.0), mismatch (0.0), or neutral (0.5) when the mentee expressed no preference on this axis (a "same home country" preference is already captured by the shared-background score above).
 4. **Combine into one score matrix.** The three signals are combined into a single weighted similarity matrix (mentees × mentors), scored on a 0-1 scale.
 5. **Greedy one-to-one matching.** Starting from the single highest-scoring pair in the entire matrix, the algorithm repeatedly selects the best remaining mentee-mentor pair, removes both from the pool, and repeats — until every mentee has one mentor. 
 
@@ -24,7 +30,6 @@ The matching is framed as a **weighted bipartite similarity-scoring problem, sol
 - **sentence-transformers** (`all-MiniLM-L6-v2`) — semantic embeddings of free-text goals and motivations
 - **scikit-learn** — cosine similarity computation
 - **NumPy** — score matrix construction and weighting
-- **gender-guesser** — name-based gender inference for records with missing data
 - **Jupyter Notebook** — end-to-end analysis, documented step by step
 
 

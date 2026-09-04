@@ -1,12 +1,12 @@
 # Apple Product Fair-Value Pricing — Time-Series Leakage Case Study
 
-Predicting a fair resale/marketplace price for Apple products (2020–2026) with Ridge regression and KNN, built around a strict chronological train/test split — and the specific leakage trap that a naive random split or random K-Fold CV would have walked straight into.
+Predicting a fair resale/marketplace price for Apple products (2020–2026) with Ridge regression and KNN
+
+## Project Impact & Business Relevance
+Stepping into a product design mindset, I set out to remove pricing friction for casual and SMB sellers. I engineered a temporal fair-pricing engine that uses model-agnostic feature decompositions (generation, storage, launch-price anchoring) to evaluate existing devices and perform zero-shot pricing on newly released models without needing prior sales history.
 
 ## The Problem
-
-Individual sellers listing used or refurbished Apple products on marketplaces like Amazon or Flipkart have to research a fair asking price themselves — slow, error-prone, and a real barrier to casual sellers. This project builds the model behind a "suggested fair price" feature: given a product's category, condition, launch price, and time since launch, predict `Current_Price_USD`.
-
-The constraint that shapes everything downstream: the suggestion has to work for products the model has never seen, including a model that launched yesterday. That rules out any feature (like a one-hot `Model_Name`) that only works for names already in the training data.
+Individual sellers listing used or refurbished Apple products on marketplaces like Amazon or Flipkart have to research a fair asking price themselves — slow, error-prone, and a real barrier to casual sellers.
 
 ## Approach
 
