@@ -14,3 +14,4 @@ __pycache__/
 
 # Raw data too large for GitHub (see each project's README for how to get it)
 nyc-airbnb-affordability/2026-04-14_listings.csv
+nyc-airbnb-affordability/2025-09-01_listings.csv
